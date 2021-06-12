@@ -1,0 +1,107 @@
+$ivony: #FBFFF1;
+$light-steel-blue: #B4C5E4;
+$true-blue: #3066BE;
+$duke-blue: #090C9B;
+$black-coffee: #3C3744;
+
+header {
+    nav {
+        display: flex;
+        max-width: 100vw;
+        background-color: $light-steel-blue;
+        padding: 5px 10px;
+        align-items: center;
+        justify-content: space-between;
+
+        #logo {
+            width: 48px;
+            height: auto;
+        }
+
+        ul {
+            list-style: none;
+            margin-right: 50px;
+        }
+
+        .navitem {
+            display: inline;
+
+            a {
+                color: #FFF;
+                text-decoration: none;
+                font-family: 'Roboto', sans-serif;
+                background-color: $true-blue;
+                padding: 5px 30px;
+                border-radius: 7px;
+                font-size: 15pt;
+                margin-right: 5px;
+            }
+        }
+
+        .navitem.active {
+            a {
+                background-color: $duke-blue;
+            }
+        }
+    }
+}
+
+.card-container{
+    width: 90%;
+    .card{
+        display: flex;
+        background-color: $true-blue;
+        width: 100%;
+        border-radius: 5px;
+        overflow: hidden;
+        height: fit-content;
+        margin-top: 10px;
+        .card-img{
+            display: flex;
+            width: fit-content;
+            img{
+                width: 200px;
+                object-fit: cover;
+            }
+        }
+        .card-text-section{
+            padding: 5px 10px;
+            .card-title{
+                font-size: 14pt;
+                color: $ivony;
+                font-family: 'Roboto', sans-serif;
+            }
+            .card-desc{
+                color: $ivony;
+                text-align: justify;
+                font-family: 'Roboto', sans-serif;
+            }
+            .card-tech{
+                color: $ivony;
+                font-family: 'Roboto', sans-serif;
+                font-size: 12pt;
+            }
+            .card-button-section{
+                display: flex;
+                margin: auto;
+                width: 50%;
+                align-items: center;
+                justify-content: space-around;
+                .button-link{
+                    padding: 5px 10px;
+                    border-radius: 10px;
+                    background-color: $duke-blue;
+                    color: $ivony;
+                    font-family: 'Roboto', sans-serif;
+                }
+                .button-link:link{
+                    text-decoration: none;
+                }
+            }
+        }
+        
+    }
+    .card:first-child{
+        margin-top: 0px;
+    }
+}

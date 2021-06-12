@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/contato.styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img id="logo" src="assets/GP_DEV_LOGO.svg" />
+            <ul>
+                <li class="navitem"><a href="index.html">inicio</a></li>
+                <li class="navitem active"><a href="#">contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="contact-form">
+            <div class="form-field">
+                <label for="nome">nome</label>
+                <input name="nome" id="nome" />
+            </div>
+            <div class="form-field">
+                <label for="email">e-mail</label>
+                <input name="email" id="email"/>
+            </div>
+            <div class="form-field">
+                <label for="mensagem">Mensagem</label>
+                <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+            </div>
+            <div class="button-form-division">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

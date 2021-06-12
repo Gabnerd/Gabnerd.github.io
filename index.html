@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pescaroli</title>
+    <script src="https://kit.fontawesome.com/e9f303a795.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img id="logo" src="assets/GP_DEV_LOGO.svg" />
+            <ul>
+                <li class="navitem active"><a href="#">inicio</a></li>
+                <li class="navitem"><a href="contato.html">contato</a></li>
+            </ul>
+        </nav>
+        <div id="banner">
+            <h1></h1>
+            <div id="cursor"></div>
+        </div>
+    </header>
+    <main>
+        <h2>Sobre minhas habilidades</h2>
+        <section class="skills-section">
+            <button class="skills-button" onclick="showFrontend()"><span id="icon-chevron-frontend" colapsed="true"><i
+                        class="fas fa-chevron-right"></i></span> frontend</button>
+            <div id="frontend-content" class="skill-content">
+                <div class="skill-cont">
+                    <p><i class="fab fa-html5"></i> HTML</p>
+                    <div class="skill-level-container">
+                        <div id="html-skill-level">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-cont">
+                    <p><i class="fab fa-css3-alt"></i> CSS/SCSS</p>
+                    <div class="skill-level-container">
+                        <div id="css-skill-level">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-cont">
+                    <p><i class="fab fa-js-square"></i> JS</p>
+                    <div class="skill-level-container">
+                        <div id="js-skill-level">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="skills-button" onclick="showBackend()"><span id="icon-chevron-backend" colapsed="true"><i
+                        class="fas fa-chevron-right"></i></span> backend</button>
+            <div id="backend-content" class="skill-content">
+                <div class="skill-cont">
+                    <p><i class="fab fa-node-js"></i> NodeJS</p>
+                    <div class="skill-level-container">
+                        <div id="node-skill-level">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-cont">
+                    <p><i class="fab fa-php"></i> PHP</p>
+                    <div class="skill-level-container">
+                        <div id="php-skill-level">
+
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <button class="skills-button" onclick="showVariados()"><span id="icon-chevron-variados" colapsed="true"><i
+                        class="fas fa-chevron-right"></i></span> Framework</button>
+            <div id="frameworks-content" class="skill-content">
+                <div class="skill-cont">
+                    <p><i class="fab fa-angular"></i> Angular</p>
+                    <div class="skill-level-container">
+                        <div id="angular-skill-level">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-cont">
+                    <p><i class="fab fa-react"></i> React</p>
+                    <div class="skill-level-container">
+                        <div id="react-skill-level">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-cont">
+                    <p>Ruby on Rails</p>
+                    <div class="skill-level-container">
+                        <div id="ror-skill-level">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="skills-button" onclick="showGamedev()"><span id="icon-chevron-gamedev" colapsed="true"><i
+                class="fas fa-chevron-right"></i></span> GameDev</button>
+    <div id="gamedev-content" class="skill-content">
+        <div class="skill-cont">
+            <p>Godot</p>
+            <div class="skill-level-container">
+                <div id="godot-skill-level">
+
+                </div>
+            </div>
+        </div>
+        <div class="skill-cont">
+            <p>Blender(Modelagem)</p>
+            <div class="skill-level-container">
+                <div id="blender-skill-level">
+
+                </div>
+            </div>
+        </div>
+        <div class="skill-cont">
+            <p>RGBDS(Gameboy games)</p>
+            <div class="skill-level-container">
+                <div id="rgbds-skill-level">
+
+                </div>
+            </div>
+        </div>
+    </div>
+        </section>
+        <h3>Aqui encontrará meus projetos e ideias, espero que não se perca <i class="far fa-smile-wink"></i></h3>
+        <div class="card-container">
+            <div class="card">
+                <div class="card-img">
+                    <img src="assets/RocketStar-screenshot.png" />
+                </div>
+                <div class="card-text-section">
+                    <h4 class="card-title">RocketStar</h4>
+                    <p class="card-desc">RocketStar é uma jogo demo para gameboy desenvolvimento por mim para testar uma
+                        mecanica de
+                        jogo que estava pensando por um tempo em recriar e tambem para testar as minhas habilidades de
+                        aprender algo novo em pouco tempo.</p>
+                    <p class="card-desc">Ele foi desenvolvimento usando uma linguagem chamada assembly GBZ80, derivada
+                        do assembly Z80. Como os outros assembly, é necessario entender sobre como a maquina funciona
+                        para conseguir usar o basico da linguagem.</p>
+                    <p class="card-tech"><strong>tecnologias:</strong> Assembly GBZ80 </p>
+                    <div class="card-button-section">
+                        <a class="button-link" href="https://github.com/Gabnerd/RocketStars"><i
+                                class="fab fa-github"></i> Github</a>
+                        <a class="button-link" href="https://github.com/Gabnerd/RocketStars"><i
+                                class="fas fa-download"></i> Download da rom</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="assets/card-component-screenshot.png" />
+                </div>
+                <div class="card-text-section">
+                    <h4 class="card-title">Card Component Challenge</h4>
+                    <p class="card-desc">Esse site é um dos varios desafios de frontend que existem no site Frontend
+                        Mentor, onde o objetivo é se desafiar a fazer coisas relacionadas a aparencia dos sites e assim
+                        melhorar sua habilidades como desenvolvedor</p>
+                    <p class="card-desc">Nesse tinhamos como proposta criar um card de apresentação de uma empresa</p>
+                    <p class="card-tech"><strong>tecnologias:</strong> HTML, CSS </p>
+                    <div class="card-button-section">
+                        <a class="button-link" href="https://github.com/Gabnerd/card-component-challenge"><i
+                                class="fab fa-github"></i> Github</a>
+                        <a class="button-link" href="https://gabnerd.github.io/card-component-challenge/"><i
+                                class="fas fa-window-maximize"></i> Site demostração</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="assets/RPGExpressSystem-screenshot.png" />
+                </div>
+                <div class="card-text-section">
+                    <h4 class="card-title">RPGExpressSystem</h4>
+                    <p class="card-desc">Tecnicamente isso é um webapp, ele não é estatico, sua ideia é usar a biblioteca socket para criar uma ficha de dados que mudam em tempo real conforme o mestre queira.</p>
+                    <p class="card-desc">Para que tivesse uma forma de armazenar os dados e serem lidos depois entre os jogadores e o mestre foi usado um arquivo JSON que era lido e reescrito constantemente.</p>
+                    <p class="card-tech"><strong>tecnologias:</strong> HTML, CSS, JS, NodeJS, Socket, JSON(como banco de dados) </p>
+                    <div class="card-button-section">
+                        <a class="button-link" href="https://github.com/Gabnerd/RPGSystemExpress"><i
+                                class="fab fa-github"></i> Github</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+<script src="js/index.script.js"></script>
+
+</html>

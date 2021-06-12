@@ -1,0 +1,135 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+header nav {
+  display: flex;
+  max-width: 100vw;
+  background-color: #B4C5E4;
+  padding: 5px 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav #logo {
+  width: 48px;
+  height: auto;
+}
+header nav ul {
+  list-style: none;
+  margin-right: 50px;
+}
+header nav .navitem {
+  display: inline;
+}
+header nav .navitem a {
+  color: #FFF;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  background-color: #3066BE;
+  padding: 5px 30px;
+  border-radius: 7px;
+  font-size: 15pt;
+  margin-right: 5px;
+}
+header nav .navitem.active a {
+  background-color: #090C9B;
+}
+
+.card-container {
+  width: 90%;
+}
+.card-container .card {
+  display: flex;
+  background-color: #3066BE;
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  height: fit-content;
+  margin-top: 10px;
+}
+.card-container .card .card-img {
+  display: flex;
+  width: fit-content;
+}
+.card-container .card .card-img img {
+  width: 200px;
+  object-fit: cover;
+}
+.card-container .card .card-text-section {
+  padding: 5px 10px;
+}
+.card-container .card .card-text-section .card-title {
+  font-size: 14pt;
+  color: #FBFFF1;
+  font-family: "Roboto", sans-serif;
+}
+.card-container .card .card-text-section .card-desc {
+  color: #FBFFF1;
+  text-align: justify;
+  font-family: "Roboto", sans-serif;
+}
+.card-container .card .card-text-section .card-tech {
+  color: #FBFFF1;
+  font-family: "Roboto", sans-serif;
+  font-size: 12pt;
+}
+.card-container .card .card-text-section .card-button-section {
+  display: flex;
+  margin: auto;
+  width: 50%;
+  align-items: center;
+  justify-content: space-around;
+}
+.card-container .card .card-text-section .card-button-section .button-link {
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: #090C9B;
+  color: #FBFFF1;
+  font-family: "Roboto", sans-serif;
+}
+.card-container .card .card-text-section .card-button-section .button-link:link {
+  text-decoration: none;
+}
+.card-container .card:first-child {
+  margin-top: 0px;
+}
+
+main {
+  display: flex;
+  width: 100vw;
+  height: calc(100vh - 200px);
+  align-items: center;
+  justify-content: center;
+}
+main #contact-form {
+  border: 1px solid #AAA;
+  border-radius: 5px;
+  padding: 5px 10px;
+  width: 30%;
+}
+main #contact-form .form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+main #contact-form .form-field label {
+  font-family: "Roboto", sans-serif;
+}
+main #contact-form .button-form-division {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main #contact-form .button-form-division button {
+  padding: 5px 10px;
+  border: 0;
+  background-color: #3066BE;
+  color: #FBFFF1;
+  font-family: "Roboto", sans-serif;
+  border-radius: 5px;
+  width: 50%;
+  font-size: 15pt;
+}
+
+/*# sourceMappingURL=contato.styles.css.map */

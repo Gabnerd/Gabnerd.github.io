@@ -1,0 +1,43 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@import "./global.styles.scss";
+
+main{
+    display: flex;
+    width: 100vw;
+    height: calc(100vh - 200px);
+    align-items: center;
+    justify-content: center;
+    #contact-form{
+        border: 1px solid #AAA;
+        border-radius: 5px;
+        padding: 5px 10px;
+        width: 30%;
+        .form-field{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 5px;
+            label{
+                font-family: 'Roboto', sans-serif;
+            }
+        }
+        .button-form-division{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            button{
+                padding: 5px 10px;
+                border: 0;
+                background-color: $true-blue;
+                color: $ivony;
+                font-family: 'Roboto', sans-serif;
+                border-radius: 5px;
+                width: 50%;
+                font-size: 15pt;
+            }
+        }
+    }
+}

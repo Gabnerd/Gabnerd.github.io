@@ -1,0 +1,185 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@import "./global.styles.scss";
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+
+    header {
+        
+
+        #banner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 200px;
+
+            h1 {
+                font-family: 'Roboto', sans-serif;
+                font-size: 50pt;
+            }
+
+            #cursor {
+                height: 50pt;
+                width: 10px;
+                background-color: black;
+                animation: blinker 0.5s linear infinite;
+            }
+        }
+    }
+
+    main {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        h3 {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        h2 {
+            margin-bottom: 50px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .skills-section {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+
+            .skills-button {
+                padding: 5px 10px;
+                background-color: $ivony;
+                border: 0;
+                text-align: left;
+                font-family: 'Roboto', sans-serif;
+                font-size: 14pt;
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .skill-content {
+                display: none;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                width: 100%;
+                margin-bottom: 5px;
+                .skill-level-container {
+                    overflow: hidden;
+                    border-radius: 25px;
+                    height: 5px;
+                    border: 1px solid $black-coffee;
+                }
+            }
+
+            #frontend-content {
+                .fa-html5{
+                    color: rgb(248, 142, 2);
+                }
+                #html-skill-level {
+                    height: 100%;
+                    width: 85%;
+                    background-color: rgb(248, 142, 2);
+                }
+                .fa-css3-alt{
+                    color: rgb(0, 153, 255);
+                }
+                #css-skill-level {
+                    height: 110%;
+                    width: 90%;
+                    background-color: rgb(0, 153, 255);
+                }
+                .fa-js-square{
+                    color: rgb(224, 228, 0);
+                }
+                #js-skill-level {
+                    height: 100%;
+                    width: 60%;
+                    background-color: rgb(224, 228, 0);
+                }
+            }
+
+            #backend-content{
+                .fa-node-js{
+                    color: rgb(35, 212, 0);
+                }
+                #node-skill-level{
+                    height: 100%;
+                    width: 60%;
+                    background-color: rgb(35, 212, 0);
+                }
+                .fa-php{
+                    color: $true-blue;
+                }
+                #php-skill-level{
+                    height: 100%;
+                    width: 40%;
+                    background-color: $true-blue;
+                }
+            }
+
+            #frameworks-content{
+                .fa-angular{
+                    color: #c50000;
+                }
+                #angular-skill-level{
+                    height: 100%;
+                    width: 75%;
+                    background-color: #c50000;
+                }
+                .fa-react{
+                    color: $true-blue;
+                }
+                #react-skill-level{
+                    height: 100%;
+                    width: 80%;
+                    background-color: $true-blue;
+                }
+                #ror-skill-level{
+                    height: 100%;
+                    width: 60%;
+                    background-color: #970000;
+                }
+            }
+
+            #gamedev-content{
+                #godot-skill-level{
+                    height: 100%;
+                    width: 40%;
+                    background-color: $true-blue;
+                }
+                #blender-skill-level{
+                    height: 100%;
+                    width: 50%;
+                    background-color: rgb(248, 142, 2);
+                }
+                #rgbds-skill-level{
+                    height: 100%;
+                    width: 60%;
+                    background-color: $duke-blue;
+                }
+            }
+
+            .skill-cont {
+                width: 95%;
+                font-family: 'Roboto', sans-serif;
+            }
+            margin-bottom: 50px;
+        }
+        
+    }
+    footer{
+        height: 200px;
+    }
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}

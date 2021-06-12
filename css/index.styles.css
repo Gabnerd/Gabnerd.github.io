@@ -1,0 +1,250 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+header nav {
+  display: flex;
+  max-width: 100vw;
+  background-color: #B4C5E4;
+  padding: 5px 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav #logo {
+  width: 48px;
+  height: auto;
+}
+header nav ul {
+  list-style: none;
+  margin-right: 50px;
+}
+header nav .navitem {
+  display: inline;
+}
+header nav .navitem a {
+  color: #FFF;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  background-color: #3066BE;
+  padding: 5px 30px;
+  border-radius: 7px;
+  font-size: 15pt;
+  margin-right: 5px;
+}
+header nav .navitem.active a {
+  background-color: #090C9B;
+}
+
+.card-container {
+  width: 90%;
+}
+.card-container .card {
+  display: flex;
+  background-color: #3066BE;
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  height: fit-content;
+  margin-top: 10px;
+}
+.card-container .card .card-img {
+  display: flex;
+  width: fit-content;
+}
+.card-container .card .card-img img {
+  width: 200px;
+  object-fit: cover;
+}
+.card-container .card .card-text-section {
+  padding: 5px 10px;
+}
+.card-container .card .card-text-section .card-title {
+  font-size: 14pt;
+  color: #FBFFF1;
+  font-family: "Roboto", sans-serif;
+}
+.card-container .card .card-text-section .card-desc {
+  color: #FBFFF1;
+  text-align: justify;
+  font-family: "Roboto", sans-serif;
+}
+.card-container .card .card-text-section .card-tech {
+  color: #FBFFF1;
+  font-family: "Roboto", sans-serif;
+  font-size: 12pt;
+}
+.card-container .card .card-text-section .card-button-section {
+  display: flex;
+  margin: auto;
+  width: 50%;
+  align-items: center;
+  justify-content: space-around;
+}
+.card-container .card .card-text-section .card-button-section .button-link {
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: #090C9B;
+  color: #FBFFF1;
+  font-family: "Roboto", sans-serif;
+}
+.card-container .card .card-text-section .card-button-section .button-link:link {
+  text-decoration: none;
+}
+.card-container .card:first-child {
+  margin-top: 0px;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+body header #banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+body header #banner h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 50pt;
+}
+body header #banner #cursor {
+  height: 50pt;
+  width: 10px;
+  background-color: black;
+  animation: blinker 0.5s linear infinite;
+}
+body main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+body main h3 {
+  font-family: "Roboto", sans-serif;
+}
+body main h2 {
+  margin-bottom: 50px;
+  font-family: "Roboto", sans-serif;
+}
+body main .skills-section {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-bottom: 50px;
+}
+body main .skills-section .skills-button {
+  padding: 5px 10px;
+  background-color: #FBFFF1;
+  border: 0;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-size: 14pt;
+  width: 100%;
+  margin-bottom: 10px;
+}
+body main .skills-section .skill-content {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 5px;
+}
+body main .skills-section .skill-content .skill-level-container {
+  overflow: hidden;
+  border-radius: 25px;
+  height: 5px;
+  border: 1px solid #3C3744;
+}
+body main .skills-section #frontend-content .fa-html5 {
+  color: #f88e02;
+}
+body main .skills-section #frontend-content #html-skill-level {
+  height: 100%;
+  width: 85%;
+  background-color: #f88e02;
+}
+body main .skills-section #frontend-content .fa-css3-alt {
+  color: #0099ff;
+}
+body main .skills-section #frontend-content #css-skill-level {
+  height: 110%;
+  width: 90%;
+  background-color: #0099ff;
+}
+body main .skills-section #frontend-content .fa-js-square {
+  color: #e0e400;
+}
+body main .skills-section #frontend-content #js-skill-level {
+  height: 100%;
+  width: 60%;
+  background-color: #e0e400;
+}
+body main .skills-section #backend-content .fa-node-js {
+  color: #23d400;
+}
+body main .skills-section #backend-content #node-skill-level {
+  height: 100%;
+  width: 60%;
+  background-color: #23d400;
+}
+body main .skills-section #backend-content .fa-php {
+  color: #3066BE;
+}
+body main .skills-section #backend-content #php-skill-level {
+  height: 100%;
+  width: 40%;
+  background-color: #3066BE;
+}
+body main .skills-section #frameworks-content .fa-angular {
+  color: #c50000;
+}
+body main .skills-section #frameworks-content #angular-skill-level {
+  height: 100%;
+  width: 75%;
+  background-color: #c50000;
+}
+body main .skills-section #frameworks-content .fa-react {
+  color: #3066BE;
+}
+body main .skills-section #frameworks-content #react-skill-level {
+  height: 100%;
+  width: 80%;
+  background-color: #3066BE;
+}
+body main .skills-section #frameworks-content #ror-skill-level {
+  height: 100%;
+  width: 60%;
+  background-color: #970000;
+}
+body main .skills-section #gamedev-content #godot-skill-level {
+  height: 100%;
+  width: 40%;
+  background-color: #3066BE;
+}
+body main .skills-section #gamedev-content #blender-skill-level {
+  height: 100%;
+  width: 50%;
+  background-color: #f88e02;
+}
+body main .skills-section #gamedev-content #rgbds-skill-level {
+  height: 100%;
+  width: 60%;
+  background-color: #090C9B;
+}
+body main .skills-section .skill-cont {
+  width: 95%;
+  font-family: "Roboto", sans-serif;
+}
+body footer {
+  height: 200px;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+/*# sourceMappingURL=index.styles.css.map */
