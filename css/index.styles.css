@@ -154,6 +154,7 @@ body main .skills-section .skills-button {
   font-size: 14pt;
   width: 100%;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 body main .skills-section .skill-content {
   display: none;
