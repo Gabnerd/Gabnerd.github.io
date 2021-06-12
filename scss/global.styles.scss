@@ -4,6 +4,18 @@ $true-blue: #3066BE;
 $duke-blue: #090C9B;
 $black-coffee: #3C3744;
 
+::-webkit-scrollbar {
+    width: 5px
+}
+
+::-webkit-scrollbar-thumb {
+    background: $true-blue
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: $black-coffee
+}
+
 header {
     nav {
         display: flex;
