@@ -8,9 +8,14 @@
 main{
     display: flex;
     width: 100vw;
-    height: calc(100vh - 200px);
+    height: calc(100vh - 165px);
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    flex-direction: column;
+    h1{
+        font-family: 'Roboto', sans-serif;
+        color: $black-coffee;
+    }
     #contact-form{
         border: 1px solid #AAA;
         border-radius: 5px;

@@ -24,7 +24,7 @@ header {
         padding: 5px 10px;
         align-items: center;
         justify-content: space-between;
-
+        height: 40px;
         #logo {
             width: 48px;
             height: auto;
@@ -54,6 +54,23 @@ header {
             a {
                 background-color: $duke-blue;
             }
+        }
+    }
+}
+
+footer{
+    background-color: $black-coffee;
+    margin-top: 15px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    p{
+        color: $ivony;
+        a{
+            color: $ivony;
+            text-decoration: none;
+            font-weight: bold;
         }
     }
 }
