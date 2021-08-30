@@ -173,6 +173,7 @@ body main .skills-section .skills-button {
   width: 100%;
   margin-bottom: 10px;
   cursor: pointer;
+  border-radius: 5px;
 }
 body main .skills-section .skill-content {
   display: none;
@@ -275,10 +276,55 @@ body main .skills-section .skill-text {
   text-align: justify;
   font-family: "Roboto", sans-serif;
 }
+body main .skills-section .skill-blink {
+  border: 1px solid #333;
+  animation: skillBlinker 1s linear infinite;
+}
+body main #projects-section {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body main #edu-section {
+  margin-top: 20px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body main #edu-section .card-container .card {
+  padding: 5px;
+}
+body main #edu-section .card-container .card .card-img {
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px;
+}
+body footer {
+  display: flex;
+  flex-direction: column;
+}
+body footer .foot-line {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+body footer .foot-line p {
+  text-align: center;
+  width: 100%;
+}
 
 @keyframes blinker {
   50% {
     opacity: 0;
+  }
+}
+@keyframes skillBlinker {
+  50% {
+    border: 1px solid white;
   }
 }
 

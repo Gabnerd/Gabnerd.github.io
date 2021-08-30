@@ -15,7 +15,7 @@ var text_interval = setInterval(() => {
 
 function showFrontend() {
     var colapsed = document.getElementById("icon-chevron-frontend").getAttribute("colapsed");
-
+    document.getElementById("blink-button").classList.remove("skill-blink");
     if (colapsed == "true") {
         document.getElementById("icon-chevron-frontend").innerHTML = '<i class="fas fa-chevron-down"></i>';
         document.getElementById("icon-chevron-frontend").setAttribute("colapsed", "false");
